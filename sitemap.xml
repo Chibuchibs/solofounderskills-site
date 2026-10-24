@@ -3,4 +3,5 @@
   <url><loc>https://solofounderskills.com/</loc><priority>1.0</priority></url>
   <url><loc>https://solofounderskills.com/free/randomness-correctness/</loc><priority>0.8</priority></url>
   <url><loc>https://solofounderskills.com/free/idea-kill-search/</loc><priority>0.8</priority></url>
+  <url><loc>https://solofounderskills.com/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
