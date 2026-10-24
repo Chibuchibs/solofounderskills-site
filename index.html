@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>On-demand AI skills — teach Claude to do the work you keep redoing</title>
+<meta name="description" content="Sixteen ready-made skills that teach AI assistants to do real business and building tasks — killing bad ideas, pricing ad placements, checking your site, proving a fix works. Two free.">
+<link rel="canonical" href="https://solofounderskills.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="On-demand AI skills for people building on their own">
+<meta property="og:description" content="Sixteen skills from real shipped products. Every number measured, not guessed. Two free — read them first.">
+<meta property="og:url" content="https://solofounderskills.com/">
+<meta property="og:image" content="https://solofounderskills.com/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product",
+ "name":"Solo Founder Skills — On-demand AI Skills",
+ "description":"Sixteen ready-made skills for AI assistants, covering building a product and getting people to use it.",
+ "brand":{"@type":"Brand","name":"Solo Founder Skills"},
+ "offers":{"@type":"Offer","price":"49","priceCurrency":"USD","availability":"https://schema.org/InStock"}}
+</script>
+<style>
+ :root{
+   --bg:#fffaf3; --card:#fff; --line:#f0e2d4; --ink:#241f2e; --dim:#6f6578;
+   --warm:#ff6b35; --warm-dk:#e8521c; --cool:#1a9e94; --sun:#ffb86b;
+   --tint:#fff1e6; --mint:#e8f7f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);
+   font:17px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+   -webkit-font-smoothing:antialiased}
+ .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+ h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.022em}
+ h1{font-size:clamp(33px,5.6vw,56px)}
+ h2{font-size:clamp(25px,3.6vw,36px);margin:0 0 14px}
+ p{margin:0 0 16px}
+ a{color:var(--warm-dk)}
+ .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+
+ header{background:linear-gradient(170deg,#fff4e8 0%,var(--bg) 72%);
+   padding:52px 0 58px;border-bottom:1px solid var(--line)}
+ .hero{display:grid;gap:30px;grid-template-columns:1fr;align-items:center}
+ @media(min-width:860px){.hero{grid-template-columns:1.08fr .92fr;gap:40px}}
+ .pill{display:inline-block;font-size:12.5px;font-weight:800;letter-spacing:.08em;
+   text-transform:uppercase;color:var(--warm-dk);background:var(--tint);
+   border:1.5px solid #ffd4b8;padding:6px 13px;border-radius:999px;margin-bottom:18px}
+ .lede{font-size:clamp(17px,2.1vw,20px);color:var(--dim);margin-top:16px;max-width:30em}
+ .cta{display:inline-flex;align-items:center;gap:9px;
+   background:linear-gradient(135deg,var(--sun),var(--warm));
+   color:#fff;font-weight:800;font-size:17px;padding:16px 30px;border-radius:13px;
+   text-decoration:none;margin-top:24px;box-shadow:0 10px 24px rgba(255,107,53,.28)}
+ .cta:hover{filter:brightness(1.05)}
+ .sub{font-size:14.5px;color:var(--dim);margin-top:13px}
+ .hero svg{width:100%;height:auto;display:block}
+
+ section{padding:56px 0;border-bottom:1px solid var(--line)}
+ .kicker{font-size:12.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+   color:var(--cool);margin:0 0 9px}
+ .grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(248px,1fr))}
+ .card{background:var(--card);border:1.5px solid var(--line);border-radius:15px;
+   padding:17px 18px}
+ .card h3{font-size:16px;margin-bottom:6px}
+ .card p{font-size:14.5px;color:var(--dim);margin:0}
+ .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.05em;
+   text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-left:7px;
+   vertical-align:2px}
+ .t-easy{background:var(--mint);color:#15756d}
+ .t-build{background:var(--tint);color:var(--warm-dk)}
+ .group{font-size:13px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+   color:var(--dim);margin:28px 0 12px}
+ .group:first-of-type{margin-top:0}
+
+ table{width:100%;border-collapse:collapse;font-size:15px;margin:4px 0 10px;
+   background:var(--card);border-radius:12px;overflow:hidden}
+ th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line)}
+ th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);
+   background:#fff6ed}
+ td.num{font-family:ui-monospace,monospace}
+ .hit{color:var(--cool);font-weight:800}
+ .miss{color:var(--warm-dk);font-weight:800}
+
+ .free{background:linear-gradient(140deg,var(--mint),#fff);
+   border:2px solid #b9e7e2;border-radius:18px;padding:28px 24px}
+ .pricebox{text-align:center;background:var(--card);border:2px solid var(--line);
+   border-radius:18px;padding:34px 24px;max-width:470px;margin:0 auto}
+ .price{font-size:52px;font-weight:800;letter-spacing:-.03em}
+ .price small{font-size:16px;font-weight:600;color:var(--dim)}
+ .faq dt{font-weight:800;margin-top:20px}
+ .faq dd{margin:6px 0 0;color:var(--dim)}
+ footer{padding:38px 0 64px;color:var(--dim);font-size:14.5px}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+ <div class="hero">
+  <div>
+   <span class="pill">On-demand AI skills</span>
+   <h1>You don’t need to be a developer any more.</h1>
+   <p class="lede">AI changed who gets to build things. The hard part isn’t code
+   now — it’s knowing what to do next. These are sixteen ready-made skills that
+   tell your AI exactly that, drawn from real products and real mistakes.</p>
+   <a class="cta" href="#get">Get all sixteen — $49 →</a>
+   <p class="sub">Two are free below. Read those first, then decide.</p>
+  </div>
+  <div><svg viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="A founder at a laptop with ideas forming above them">
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb86b"/><stop offset="1" stop-color="#ff6b35"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ecdc4"/><stop offset="1" stop-color="#1a9e94"/>
+    </linearGradient>
+  </defs>
+
+  <!-- glow behind -->
+  <ellipse cx="260" cy="210" rx="210" ry="150" fill="#ffe8d6" opacity=".55"/>
+
+  <!-- floating idea cards -->
+  <g opacity=".95">
+    <rect x="52" y="44" width="104" height="66" rx="13" fill="#fff" stroke="#ffd4b8" stroke-width="2"/>
+    <circle cx="78" cy="70" r="10" fill="url(#warm)"/>
+    <rect x="95" y="64" width="46" height="6" rx="3" fill="#ffd4b8"/>
+    <rect x="68" y="88" width="72" height="6" rx="3" fill="#f0e4da"/>
+
+    <rect x="370" y="60" width="106" height="72" rx="13" fill="#fff" stroke="#c8 efe9" stroke-width="2"/>
+    <rect x="370" y="60" width="106" height="72" rx="13" fill="#fff" stroke="#c9efea" stroke-width="2"/>
+    <rect x="386" y="104" width="12" height="16" rx="3" fill="url(#cool)"/>
+    <rect x="404" y="92" width="12" height="28" rx="3" fill="url(#cool)"/>
+    <rect x="422" y="80" width="12" height="40" rx="3" fill="url(#cool)"/>
+    <rect x="440" y="96" width="12" height="24" rx="3" fill="#bfeae5"/>
+
+    <rect x="392" y="196" width="96" height="58" rx="13" fill="#fff" stroke="#ffd4b8" stroke-width="2"/>
+    <path d="M409 232l14-16 12 11 16-19" stroke="url(#warm)" stroke-width="4"
+          fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#ff6b35">
+    <path d="M196 38l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M330 150l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" opacity=".7"/>
+    <path d="M118 168l2.5 6 6 2.5-6 2.5-2.5 6-2.5-6-6-2.5 6-2.5z" opacity=".55"/>
+  </g>
+
+  <!-- desk -->
+  <rect x="112" y="300" width="300" height="11" rx="5.5" fill="#e8d5c4"/>
+  <rect x="150" y="311" width="12" height="42" rx="4" fill="#dcc6b2"/>
+  <rect x="362" y="311" width="12" height="42" rx="4" fill="#dcc6b2"/>
+
+  <!-- laptop -->
+  <path d="M206 222h112a7 7 0 0 1 7 7v62H199v-62a7 7 0 0 1 7-7z" fill="#2d3142"/>
+  <rect x="207" y="230" width="110" height="54" rx="4" fill="#4ecdc4" opacity=".28"/>
+  <rect x="217" y="242" width="52" height="5" rx="2.5" fill="#fff" opacity=".85"/>
+  <rect x="217" y="254" width="74" height="5" rx="2.5" fill="#fff" opacity=".6"/>
+  <rect x="217" y="266" width="38" height="5" rx="2.5" fill="#ff6b35" opacity=".9"/>
+  <path d="M186 291h152l8 9H178z" fill="#3d4257"/>
+
+  <!-- person -->
+  <g>
+    <path d="M228 300c0-28 14-46 34-46s34 18 34 46z" fill="url(#cool)"/>
+    <path d="M246 268c-16 6-24 18-26 32h18z" fill="#17867e" opacity=".5"/>
+    <circle cx="262" cy="228" r="25" fill="#8d5a3b"/>
+    <path d="M238 224c0-15 10-25 24-25s24 10 24 25c0 4-2 6-2 6s-4-12-22-12-22 12-22 12-2-2-2-6z" fill="#2d2118"/>
+    <!-- hand to chin, thinking -->
+    <path d="M276 262c7-2 12-8 12-15" stroke="#8d5a3b" stroke-width="11"
+          fill="none" stroke-linecap="round"/>
+    <circle cx="280" cy="246" r="7" fill="#8d5a3b"/>
+  </g>
+
+  <!-- thought dots rising -->
+  <circle cx="300" cy="196" r="5" fill="#ff6b35" opacity=".5"/>
+  <circle cx="312" cy="176" r="7" fill="#ff6b35" opacity=".35"/>
+  <circle cx="326" cy="152" r="9" fill="#ff6b35" opacity=".22"/>
+</svg>
+</div>
+ </div>
+</div></header>
+
+<section><div class="wrap">
+ <p class="kicker">Who this is for</p>
+ <h2>The new founder isn’t a programmer</h2>
+ <p style="color:var(--dim);max-width:46em">For twenty years, having an idea
+ wasn’t enough — you needed someone who could build it. That stopped being true.
+ People are shipping real products now having never written a line of code.</p>
+ <p style="color:var(--dim);max-width:46em">But building was only ever half of
+ it. The half nobody hands you is knowing <em>what to do next</em>: whether the
+ idea is worth it at all, what an advert is really costing you, why people leave
+ on day three, whether the thing you just changed actually worked.</p>
+ <p style="color:var(--dim);max-width:46em"><strong>That’s what these are.</strong>
+ A skill is a recipe your AI follows — you write it down once and Claude works
+ out when to use it. Eight of these sixteen need no technical knowledge at all.
+ The other eight are for when you’re building. Both are marked below, so there
+ are no surprises.</p>
+</div></section>
+
+<section><div class="wrap">
+ <p class="kicker">The sixteen</p>
+ <h2>What's in the pack</h2>
+
+ <div class="group">Working out what to build</div>
+ <div class="grid">
+  <div class="card"><h3>Kill a bad idea in an hour<span class="tag t-easy">no terminal</span></h3>
+   <p>Three searches and four checks that catch what competitor research misses. Free below.</p></div>
+ </div>
+
+ <div class="group">Getting people to actually use it</div>
+ <div class="grid">
+  <div class="card"><h3>Know what a customer costs<span class="tag t-easy">no terminal</span></h3>
+   <p>Work out what you really pay per result, and tell a dead channel from bad creative.</p></div>
+  <div class="card"><h3>Never lose track of a link<span class="tag t-easy">no terminal</span></h3>
+   <p>Tag before you post. What a big "direct traffic" number is actually hiding.</p></div>
+  <div class="card"><h3>Price a sponsored post<span class="tag t-easy">no terminal</span></h3>
+   <p>What a community is really worth, and how to buy a post without overpaying.</p></div>
+  <div class="card"><h3>Fix a listing that doesn't convert<span class="tag t-easy">no terminal</span></h3>
+   <p>The two screenshots and the one line that do nearly all the work.</p></div>
+  <div class="card"><h3>Find out if a change worked<span class="tag t-easy">no terminal</span></h3>
+   <p>Averages will lie to you. This splits people by when they arrived.</p></div>
+ </div>
+
+ <div class="group">Checking it really works</div>
+ <div class="grid">
+  <div class="card"><h3>Spot what users can't see<span class="tag t-easy">no terminal</span></h3>
+   <p>Find the buttons, targets and states people genuinely miss on screen.</p></div>
+  <div class="card"><h3>One test for a stubborn bug<span class="tag t-easy">no terminal</span></h3>
+   <p>Design a single check that tests every layer, for problems on devices you don't own.</p></div>
+  <div class="card"><h3>Do your instructions work?<span class="tag t-build">building</span></h3>
+   <p>Simulate what the screen tells people to do, and check it actually wins.</p></div>
+  <div class="card"><h3>Prove the fix is live<span class="tag t-build">building</span></h3>
+   <p>Verify on the real site, not in your editor.</p></div>
+  <div class="card"><h3>Catch unfair randomness<span class="tag t-build">building</span></h3>
+   <p>Shuffles and odds that aren't what they look like. Free below.</p></div>
+ </div>
+
+ <div class="group">Shipping it</div>
+ <div class="grid">
+  <div class="card"><h3>Get found on Google<span class="tag t-build">building</span></h3>
+   <p>The technical foundation: canonical host, sitemap, social cards, structured data.</p></div>
+  <div class="card"><h3>Move hosts without breaking email<span class="tag t-build">building</span></h3>
+   <p>The part everyone gets wrong. Includes the certificate trick.</p></div>
+  <div class="card"><h3>Stop shipping stale code<span class="tag t-build">building</span></h3>
+   <p>Why a fresh page loads old files, and how to make it impossible.</p></div>
+  <div class="card"><h3>Skip the signup wall<span class="tag t-build">building</span></h3>
+   <p>Let people use your app without an account, safely.</p></div>
+  <div class="card"><h3>Make your own ad graphics<span class="tag t-build">building</span></h3>
+   <p>Exact-size banners and social cards from code. No design tools.</p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <p class="kicker">Why these are different</p>
+ <h2>Most skill packs restate advice.<br>These came from failures.</h2>
+ <p style="color:var(--dim);max-width:46em">Three examples, all in the pack,
+ all measured:</p>
+
+ <h3 style="font-size:19px;margin:30px 0 10px">A game literally nobody could beat</h3>
+ <p style="color:var(--dim)">The instruction said "tap the side you're falling
+ towards". The code pushed you <em>in</em> the direction you tapped — so it was
+ telling players to speed up their own fall. Over 300 simulated runs:</p>
+ <table>
+  <tr><th>What you do</th><th>Times you fall</th></tr>
+  <tr><td>Tap the opposite side</td><td class="num hit">0</td></tr>
+  <tr><td>Tap towards it — what the screen said</td><td class="num miss">1,108</td></tr>
+  <tr><td>Don't touch anything at all</td><td class="num miss">1,108</td></tr>
+ </table>
+ <p style="color:var(--dim);font-size:15px">Following the instructions was worth
+ exactly as much as not playing. No difficulty tweak would ever have fixed it.</p>
+
+ <h3 style="font-size:19px;margin:32px 0 10px">A quiz that quietly cheated</h3>
+ <p style="color:var(--dim)">One line of code sits in a lot of projects:
+ <span class="mono">sort(() =&gt; Math.random() - 0.5)</span>. It looks like a
+ shuffle. It isn't. Where the right answer actually landed, over 200,000 runs:</p>
+ <table>
+  <tr><th>Position</th><th>Should be 25%</th></tr>
+  <tr><td>First option</td><td class="num miss">28.3%</td></tr>
+  <tr><td>Second</td><td class="num miss">28.2%</td></tr>
+  <tr><td>Third</td><td class="num">24.7%</td></tr>
+  <tr><td>Fourth</td><td class="num miss">18.8%</td></tr>
+ </table>
+ <p style="color:var(--dim);font-size:15px">Always guessing the first option beat
+ guessing at random. The same bug was in eleven places in one project.</p>
+
+ <h3 style="font-size:19px;margin:32px 0 10px">The group charging most was worth least</h3>
+ <p style="color:var(--dim)">Six communities, same market, all quoting for a post:</p>
+ <table>
+  <tr><th>Members</th><th>Posts a day</th><th>Your post is buried after</th></tr>
+  <tr><td class="num">801,000</td><td class="num">54</td><td class="num hit">~18 min</td></tr>
+  <tr><td class="num">130,000</td><td class="num">12</td><td class="num hit">~80 min</td></tr>
+  <tr><td class="num">50,000</td><td class="num">7</td><td class="num hit">~2.3 hrs</td></tr>
+  <tr><td class="num">21,000 <em style="color:var(--warm-dk)">(asking the most)</em></td>
+      <td class="num">117</td><td class="num miss">~8 min</td></tr>
+ </table>
+ <p style="color:var(--dim);font-size:15px">Member count is the number sellers
+ quote and the one that means least.</p>
+</div></section>
+
+<section><div class="wrap">
+ <div class="free">
+  <h2 style="margin-bottom:8px">Two are free. Judge the rest by them.</h2>
+  <p style="color:var(--dim)">Not teasers — the complete files, same as the
+  fourteen you'd pay for. If they're not useful, don't buy the pack.</p>
+  <div class="grid" style="margin-top:20px">
+   <div class="card"><h3><a href="/free/idea-kill-search/">Kill a bad idea in an hour</a></h3>
+    <p>Three searches and four checks, before you build anything.</p></div>
+   <div class="card"><h3><a href="/free/randomness-correctness/">Catch unfair randomness</a></h3>
+    <p>The shuffle bug above, how to spot it, and how to test it properly.</p></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="get"><div class="wrap">
+ <div class="pricebox">
+  <div class="price">$49 <small>once</small></div>
+  <p style="color:var(--dim);margin-top:10px">All sixteen skills. No subscription,
+  no account to make. Updates included.</p>
+  <a class="cta" href="REPLACE-WITH-YOUR-STRIPE-LINK">Get the pack →</a>
+  <p class="sub">Instant download · works in Claude on desktop, web and in the terminal</p>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Questions</h2>
+ <dl class="faq">
+  <dt>Do I need to be technical?</dt>
+  <dd>For eight of them, no — killing bad ideas, pricing a sponsored post,
+  reading whether a change worked, fixing a listing. Those work in the Claude app
+  with no terminal at all. The other eight are for people building something, and
+  they're marked above so there are no surprises.</dd>
+
+  <dt>What do I actually get?</dt>
+  <dd>Sixteen text files and a short guide on where to put them. That's genuinely
+  it — no software to install, nothing to configure.</dd>
+
+  <dt>Will these work outside Claude?</dt>
+  <dd>Yes. They're plain text, so you can paste one into any assistant that takes
+  custom instructions. You lose the automatic triggering, so you say which one you
+  want instead.</dd>
+
+  <dt>Why sixteen and not sixty?</dt>
+  <dd>Because each one came from something that actually went wrong, and there
+  have been sixteen worth writing down. Padding the number would mean padding with
+  advice you can already read for free.</dd>
+
+  <dt>Are there reviews?</dt>
+  <dd>Not yet — this is new, and making them up would be worse than saying so.
+  That's exactly why two skills are free: check the quality yourself rather than
+  trusting anyone's word.</dd>
+
+  <dt>What if something's wrong in one?</dt>
+  <dd>Tell me and I'll fix it, and you'll get the update. Every piece of code in
+  the pack was actually run before release — two bugs got caught that way.</dd>
+ </dl>
+</div></section>
+
+<footer><div class="wrap">
+ <p>Built by Damian, from three products that shipped.</p>
+ <p><a href="/free/idea-kill-search/">Free: kill a bad idea</a> ·
+    <a href="/free/randomness-correctness/">Free: catch unfair randomness</a></p>
+</div></footer>
+
+</body>
+</html>
