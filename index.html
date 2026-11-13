@@ -404,5 +404,25 @@
     <a href="/free/randomness-correctness/">Free: is &ldquo;random&rdquo; really random?</a></p>
 </div></footer>
 
+<script>
+/* Where a buyer came from. A visit tagged ?ref=otondo (or any ?ref=) is
+   remembered on this device, and the tag rides into Stripe checkout as
+   client_reference_id, so the sale shows where it came from in the Stripe
+   dashboard. Letters, digits, - and _ only, which is what Stripe accepts. */
+(() => {
+  let ref = new URLSearchParams(location.search).get('ref');
+  try {
+    if (ref) localStorage.setItem('sfs:ref', ref);
+    else ref = localStorage.getItem('sfs:ref');
+  } catch (e) {}
+  ref = (ref || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 60);
+  if (!ref) return;
+  document.querySelectorAll('a[href^="https://buy.stripe.com/"]').forEach(a => {
+    const u = new URL(a.href);
+    u.searchParams.set('client_reference_id', ref);
+    a.href = u.toString();
+  });
+})();
+</script>
 </body>
 </html>
